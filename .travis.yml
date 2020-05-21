@@ -1,0 +1,15 @@
+language: scala
+
+git:
+  depth: false # Avoid sbt-dynver not seeing the tag
+
+
+script:  
+  - echo Hello
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: echo deploy
+    on:
+      branch: master
