@@ -10,6 +10,6 @@ script:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: echo deploy
+    script: echo deploy - $TRAVIS_TAG
     on:
       branch: master
